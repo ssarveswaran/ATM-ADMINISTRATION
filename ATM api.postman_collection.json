@@ -1,0 +1,513 @@
+{
+	"info": {
+		"_postman_id": "f5c3f212-0ff8-4cd6-8b97-b572079d3be4",
+		"name": "ATM api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32462834"
+	},
+	"item": [
+		{
+			"name": "Getting All User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"get"
+					]
+				},
+				"description": "user list"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding new Custodian",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"kavi\",\r\n    \"password\":123,\r\n    \"role\":\"CUSTODIAN\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"add"
+					]
+				},
+				"description": "Adding new User"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding new Reporter",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"john\",\r\n    \"password\":123,\r\n    \"role\":\"REPORTER\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"add"
+					]
+				},
+				"description": "Adding User"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding New Admin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"rahul\",\r\n    \"password\":123,\r\n    \"role\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"add"
+					]
+				},
+				"description": "Adding new User"
+			},
+			"response": []
+		},
+		{
+			"name": "Updating the User By Id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"dhanush\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/update/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"update",
+						"4"
+					]
+				},
+				"description": "Updating the User"
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting User By Id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/delete/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"delete",
+						"4"
+					]
+				},
+				"description": "Deleting the particular User"
+			},
+			"response": []
+		},
+		{
+			"name": "Overall user list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "sarvesh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/User/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"User",
+						"get"
+					]
+				},
+				"description": "Getting the entire user list"
+			},
+			"response": []
+		},
+		{
+			"name": "Checking the Balance in ATM",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "kavi",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/Custodian/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"Custodian",
+						"get"
+					]
+				},
+				"description": "Getting money list"
+			},
+			"response": []
+		},
+		{
+			"name": "Load Money in the Atm",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "kavi",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"userName\":\"kavi\",\r\n    \"hundred\":2,\r\n    \"twoHundred\":4,\r\n    \"fiveHundred\":6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/Custodian/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"Custodian",
+						"add"
+					]
+				},
+				"description": "custodian Load the Money"
+			},
+			"response": []
+		},
+		{
+			"name": "View the Money",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "kavi",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/Custodian/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"Custodian",
+						"get"
+					]
+				},
+				"description": "Custodian only have the right to access to view the balance in the ATM"
+			},
+			"response": []
+		},
+		{
+			"name": "Viewing the Entire Money Loader History",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "john",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/Report/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"Report",
+						"get"
+					]
+				},
+				"description": "Viewing Custodian Money Details"
+			},
+			"response": []
+		},
+		{
+			"name": "Downloading the Custodian Report",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "john",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9292/Atm/v1.0/Report/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"Atm",
+						"v1.0",
+						"Report",
+						"download"
+					]
+				},
+				"description": "Report Download"
+			},
+			"response": []
+		}
+	]
+}
