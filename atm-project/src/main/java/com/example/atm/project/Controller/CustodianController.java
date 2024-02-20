@@ -28,7 +28,7 @@ public class CustodianController {
     private MoneyService Ser;
     @GetMapping("/get")
     @PreAuthorize("hasAuthority('CUSTODIAN')")
-    public ResponseEntity<List<Money>> get(){
+    public ResponseEntity<Money> get(){
         return new ResponseEntity<>(Ser.get(), HttpStatus.OK);
     }
     @PostMapping("/add")
