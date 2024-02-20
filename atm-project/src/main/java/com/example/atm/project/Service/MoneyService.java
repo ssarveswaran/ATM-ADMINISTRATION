@@ -15,8 +15,8 @@ import java.util.List;
 public class MoneyService {
     @Autowired
     private MoneyRepo repo;
-    public List<Money> get(){
-        return repo.findAll();
+    public Money get(){
+       return repo.findMoneyById(1);
     }
 
     public void Update(MoneyRequest req) {
